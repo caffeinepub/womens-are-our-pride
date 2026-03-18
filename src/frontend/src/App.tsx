@@ -7,6 +7,7 @@ import {
   createRoute,
   createRouter,
 } from "@tanstack/react-router";
+import InstallPrompt from "./components/InstallPrompt";
 import CctvMapPage from "./pages/CctvMapPage";
 import ContactsPage from "./pages/ContactsPage";
 import DashboardPage from "./pages/DashboardPage";
@@ -83,6 +84,7 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
+      <InstallPrompt />
       <Toaster />
     </QueryClientProvider>
   );
